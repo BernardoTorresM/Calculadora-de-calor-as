@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de calorías</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Calculadora de Calorías</h1>
+    <h2>Hospital de Salud Alimentaria</h2>
+    
+    <p id="instrucciones">
+        Ingresa tus datos para obtener un estimado de las calorías que requiere tu cuerpo para
+        mantener un estado óptimo de salud
+    </p>
+
+    <center>
+        <main id="wrapper">
+            <form>
+                <label for="genero">Género
+                    <select name="genero" id="genero">
+                        <option value="mujer">Mujer</option>
+                        <option value="hombre">Hombre</option>
+                    </select>
+                </label>
+
+                <label for="edad">Edad
+                    <input type="number" name="edad" id="edad">
+                </label>
+
+                <label for="estatura">Estatura
+                    <input type="number" name="estatura" id="estatura">
+                </label>
+
+                <label for="peso">Peso
+                    <input type="number" name="peso" id="peso">
+                </label>
+
+                <label for="actividad">Nivel de actividad
+                    <select name="actividad" id="actividad">
+                        <option value="1">Poca actividad</option>
+                        <option value="2">Ejercicio ligero</option>
+                        <option value="3">Ejercicio moderado</option>
+                        <option value="4">Deportista regular</option>
+                        <option value="5">Deportista de élite</option>
+                    </select>
+                </label>
+
+                <a id="btn-calcular" href="#">Calcular</a>
+            </form>
+            <p id='calorias'></p>
+        </main>
+    </center>
+    
+    <p id="condiciones">
+        *Consulta a tu médico antes. Esta información es una guía que pretende ser un punto
+        de referencias, las acciones que se tomen con base a esta informaicón son responsabilidad de quien las efectue.
+    </p>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
+
